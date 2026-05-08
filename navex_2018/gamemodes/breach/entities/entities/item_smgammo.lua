@@ -1,0 +1,16 @@
+--[[
+gamemodes/breach/entities/entities/item_smgammo.lua
+--]]
+
+-----------------------------------------------------
+AddCSLuaFile()
+
+ENT.Type = "anim"
+ENT.Base = "breach_baseammo"
+ENT.AmmoID = 1
+ENT.AmmoType = "SMG1"
+ENT.PName = "Патроны для ПП"
+ENT.AmmoAmount = 150
+ENT.MaxUses = 1
+ENT.Model = Model("models/items/boxmrounds.mdl")
+

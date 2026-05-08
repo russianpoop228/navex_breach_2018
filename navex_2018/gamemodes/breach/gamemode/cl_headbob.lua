@@ -1,0 +1,98 @@
+--[[
+gamemodes/breach/gamemode/cl_headbob.lua
+--]]
+
+-----------------------------------------------------
+--local HBAP = 0
+--local HBAY = 0
+--local HBAR = 0
+--local HBPX = 0
+--local HBPY = 0
+--local HBPZ = 0
+--local HBEnabled = true
+
+--function HeadBob(pl, pos, ang, fov)
+--	if HBEnabled == false then return end
+--	local view = {}
+--	view.pos = pos
+--	view.ang = ang
+--	view.fov = fov
+--	
+--	local speedmul = (pl:GetVelocity():Length() / 100) / 3
+--	
+--	if pl:IsOnGround() && HBEnabled  then
+--		
+--		if pl:KeyDown(IN_FORWARD) || pl:KeyDown(IN_BACK) || pl:KeyDown(IN_MOVELEFT) || pl:KeyDown(IN_MOVERIGHT) then
+--			HBPZ = HBPZ + (10 / 1) * FrameTime() * 1.1;
+--		end
+--	
+--		if pl:KeyDown(IN_FORWARD) then
+--			if HBAP < 1.5 then
+--				HBAP = HBAP + 0.05 * speedmul
+--			end
+--		else
+--			if HBAP > 0 then
+--				HBAP = HBAP - 0.05 * speedmul
+--			end
+--		end
+--		
+--		if pl:KeyDown(IN_BACK) then
+--			if HBAP > -1.5 then
+--				HBAP = HBAP - 0.05 * speedmul
+--			end
+--		else
+--			if HBAP < 0 then
+--				HBAP = HBAP + 0.05 * speedmul
+--			end
+--		end
+--		
+--		if pl:KeyDown(IN_MOVELEFT) then
+--			if HBAR > -1.5 then
+--				HBAR = HBAR - 0.07 * speedmul
+--			end
+--		else
+--			if HBAR < 0 then
+--				HBAR = HBAR + 0.07 * speedmul
+--			end
+--		end
+--		
+--		if pl:KeyDown(IN_MOVERIGHT) then
+--			if HBAR < 1.5 then
+--				HBAR = HBAR + 0.07 * speedmul
+--			end
+--		else
+--			if HBAR > 0 then
+--				HBAR = HBAR - 0.07 * speedmul
+--			end
+--		end
+--	end
+--	
+--	pl.OLDANG = view.ang
+--	pl.OLDPOS = view.pos
+--    
+--    local prevar = 6.5;
+--   if (LocalPlayer():GTeam() == TEAM_SPEC) or (LocalPlayer():GetNClass() == ROLES.ROLE_SCP173) or (!LocalPlayer():IsOnGround()) then prevar = 0; else prevar = 6.5; end
+--    
+--	view.ang.pitch = view.ang.pitch + HBAP * speedmul * prevar;
+--	view.ang.roll = view.ang.roll + HBAR * 0.8 * speedmul * prevar;
+--	view.pos.z = view.pos.z - math.cos(HBPZ * 0.7)
+--	
+--	return GAMEMODE:CalcView(pl, view.pos, view.ang, view.fov)
+--end
+--hook.Add("CalcView", "HeadBobbing", HeadBob)
+--
+--function ToggleHB(ply)
+--	if HBEnabled == false then
+--		print("Head Bobbing enabled")
+--		HBEnabled = true
+--	else
+--		print("Head Bobbing disabled")
+--		HBEnabled = false
+--	end
+--end
+--concommand.Add("br_headbobbing",ToggleHB)
+
+
+
+
+
